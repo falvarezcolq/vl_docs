@@ -14,12 +14,12 @@ formatos tipo para biblioteca  para disponibilidad de los abogados
 ```
 
 
-## Modelos 
+## Módulo de usuarios
 los modelos se refieren a una abstraccion de la informacion de los objetos representados en el sistemas
 
 
-Módulo de usuarios
 
+### Modelo
 ```json
 {
     "users" :
@@ -76,43 +76,41 @@ El abogado es registrado por el administrador
 
 
 
-### Parametros de registro del Cliente
+### Parametros de registro (Cliente)
 El cliente se registra por un formulario
 - Activacion de cuenta obligatoria
 - Solicitar medio de pago
 mas la tarjeta de debito o credito 
 ( investigar ) ( externo 
 
-Módulo de correos corporativos
+
+
+## Módulo de correos corporativos
 (como se va gestionar los correos corporativos )
-
-
-
-Módulo de publicación de los servicios profesionales
-
-publicacio de serivio de tramite de divorsio costo 200$
-
-descripcion
-
-
-
-servicios por region ->
-    Areas de servicio -> 
-        Vista de todos los abogados -> 
-            contactar al abogado ->
-
-
-chat interno,
-
-o por formulario
+preguntas acerca de los correos
+1. ¿Comó gestionar los correos corporativos?
+2. ¿Existe la posibilidad de migrar correos?
+3. ¿Otorgamos nosotros el buzon de correo?
+4. ¿Como lo pagamos?
 
 
 
 
+### Módulo de publicación de los servicios profesionales
 
-tramite  divorsio
-tipo acuerdo
+Los abogados tendran un perfil para responder a los trabajos que realizan, el perfil mostrara areas de especialidad de trabajo
 
+Navegacion del cliente en la busqueda de resolver un servicio será
+```
+-> servicios por region
+    ->  Areas de servicio 
+        ->  Vista de todos los abogados 
+            -> contactar al abogado
+```
+
+chat interno?
+
+o por formulario?
 
 
 Módulo de pagos
