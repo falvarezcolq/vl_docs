@@ -17,8 +17,6 @@ formatos tipo para biblioteca  para disponibilidad de los abogados
 ## Módulo de usuarios
 los modelos se refieren a una abstraccion de la informacion de los objetos representados en el sistemas
 
-
-
 ### Modelo
 ```json
 {
@@ -46,7 +44,7 @@ los modelos se refieren a una abstraccion de la informacion de los objetos repre
 
     "lawyer_data":{
         "carnet":"17816384",
-        "image_carnet":"https://micarnet.com/micarnet.jpeg"
+        "image_carnet":"https://micarnet.com/micarnet.jpeg",
         "profesional_titles":[
             {
                 "name":"Licenciatura en Derecho",
@@ -66,6 +64,13 @@ type_user : { "abogado", "cliente"}
 
 ```
 
+- Formulario de registro  y actualizacion de datos
+- Perfil del usuario
+- login
+- 
+
+
+
 ### Parametros de registro (Abogado)
 
 El abogado es registrado por el administrador
@@ -73,15 +78,21 @@ El abogado es registrado por el administrador
 - Foto del titulo y post titulos y especializaciones
 - Foto carnet de identidad ambos lados
 
+Que el abogado se registre y el administrador puede aprobar o rechazar ?
+
+
 
 
 
 ### Parametros de registro (Cliente)
 El cliente se registra por un formulario
 - Activacion de cuenta obligatoria
+
+### 
 - Solicitar medio de pago
 mas la tarjeta de debito o credito 
-( investigar ) ( externo 
+( investigar ) ( externo )   ??????????????? 
+(como pedidos ya ) (pasarela de pago)
 
 
 
@@ -91,7 +102,7 @@ preguntas acerca de los correos
 1. ¿Comó gestionar los correos corporativos?
 2. ¿Existe la posibilidad de migrar correos?
 3. ¿Otorgamos nosotros el buzon de correo?
-4. ¿Como lo pagamos?
+4. ¿Como lo pagamos?  ???  
 
 
 
@@ -108,10 +119,41 @@ Navegacion del cliente en la busqueda de resolver un servicio será
             -> contactar al abogado
 ```
 
-chat interno?
+
+chat > whatsapp 
+        - tienes chat
+        
+        desventaja
+        - no controlas la informacion
 
 o por formulario?
 
 
-Módulo de pagos
-Módulo de rating
+
+## Módulo de pagos
+pasarela de pagos > mercadolibre, tarjeta de debito
+
+Si el cliente paga a un abogado , el pago lo lo retenemos hasta que el abogado concluya con su trabajo, el pago lo libera el cliente.
+
+Arbitraje, que el abogado no a cumplido, y solicita el pago.
+
+Pasarela de pagos paga al abogado.
+
+
+## Módulo de rating
+Calificacion al abogado
+cuando califica un cliente,  despues de recibir un servicio,
+el cliente puede comentar acerca del abogado
+Estadisticas
+
+### gestion de documentos ()
+¿ Como el cliente recibe documentos ?  en funcion a los servicios del abogado
+
+
+chat interno?  firebase, websockets 
+
+### que es lo que no se va a desarrollar
+sistema de monitoreo o metricas (clicks de los usuarios)
+sistema de monitoreo de arquitectura  ( cpu, ram , rom)
+formularios dinamicos por cada tipo de servicio
+sistema de formulario
