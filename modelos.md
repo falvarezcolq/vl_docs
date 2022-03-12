@@ -9,7 +9,7 @@ normas,
 Estandares minimos de calificacion
 quejas hacia los abogados
 mas adelante
-formatos tipo para biblioteca  para disponibilidad de los abogados
+formatos tipo para biblioteca  para disponibilidad de los abogados 
 
 ```
 
@@ -24,13 +24,15 @@ los modelos se refieren a una abstraccion de la informacion de los objetos repre
         {
             "name":"",
             "last_name":"",
-            "birth_date":"",
+            "birth_date":"",  # asignar
+            
             "email":"correo externo del usuario gmail, hotmail",
+            
             "email_empresarial":"gonzalo@virtuallawyer.com",
-            "ubicacion":" privado",
-            "ciudad":"Santiago",
+           
+            "ciudad":"Santiago", # asignar
             "region":"",
-            "RUT":" nro de identificacion",
+            "RUN":" nro de identificacion",
 
             "universidad":" datos academicos",
             "anho de titulacion":"",
@@ -40,11 +42,14 @@ los modelos se refieren a una abstraccion de la informacion de los objetos repre
 
             "calificacion":"1-5  estrellas con promedio " ,
             "calificadores" :["usuario 1", "usuario2"],
+
+            "Image_profile"
         },
 
     "lawyer_data":{
         "carnet":"17816384",
         "image_carnet":"https://micarnet.com/micarnet.jpeg",
+        "matricula":"",
         "profesional_titles":[
             {
                 "name":"Licenciatura en Derecho",
@@ -60,40 +65,49 @@ los modelos se refieren a una abstraccion de la informacion de los objetos repre
     }
 }
 
-type_user : { "abogado", "cliente"}
+type_user : { "lawyer", "customer","admin"}
 
 ```
 
-- Formulario de registro  y actualizacion de datos
-- Perfil del usuario
+- Formulario de registro para el abogado
+- Formulario de registro para el cliente
+
+- Actualizacion de datos para usuario
+- Actualizacion de datos para abogado
+
+- Perfil del usuario (como mostrar la informacion al cliente)
 - login
-- 
 
 
 
 ### Parametros de registro (Abogado)
 
-El abogado es registrado por el administrador
+
+Que el abogado se registre 
+y el administrador puede aprobar o rechazar
 
 - Foto del titulo y post titulos y especializaciones
 - Foto carnet de identidad ambos lados
-
-Que el abogado se registre y el administrador puede aprobar o rechazar ?
-
-
-
+- Revision de antecedentes ?
 
 
 ### Parametros de registro (Cliente)
 El cliente se registra por un formulario
-- Activacion de cuenta obligatoria
+- Activacion de cuenta obligatoria  con verificacion del correo
+
 
 ### 
 - Solicitar medio de pago
 mas la tarjeta de debito o credito 
 ( investigar ) ( externo )   ??????????????? 
-(como pedidos ya ) (pasarela de pago)
+(como pedidos ya ) (pasarela de pago) 
 
+datos de la tarjeta de debito
+mercado pago
+paypal 
+pasarela y forma de pago
+https://www.mercadopago.cl/developers/es/guides/online-payments/checkout-api/testing
+https://www.khipu.com/api/
 
 
 ## Módulo de correos corporativos
@@ -103,6 +117,10 @@ preguntas acerca de los correos
 2. ¿Existe la posibilidad de migrar correos?
 3. ¿Otorgamos nosotros el buzon de correo?
 4. ¿Como lo pagamos?  ???  
+
+server fisico host web 
+instalar un programa server de correos,
+
 
 
 
@@ -119,23 +137,36 @@ Navegacion del cliente en la busqueda de resolver un servicio será
             -> contactar al abogado
 ```
 
+campo de texto de busqueda
+
+filtro -> region, area de servicio
+divorcio - > lista abogados que se especializan en esos temas,  -> servicios relacionados con la busqueda -> lista de abogados
+
 
 chat > whatsapp 
         - tienes chat
-        
         desventaja
         - no controlas la informacion
 
-o por formulario?
+
+o por formulario genérico
+
+categorizar servicios[]
+servicios empresariales
+servicios interempresas
+servicios para personas
+servicios especializados
+
 
 
 
 ## Módulo de pagos
 pasarela de pagos > mercadolibre, tarjeta de debito
 
-Si el cliente paga a un abogado , el pago lo lo retenemos hasta que el abogado concluya con su trabajo, el pago lo libera el cliente.
+Si el cliente paga a un abogado , el pago lo retenemos hasta que el abogado concluya con su trabajo, el pago lo libera el cliente.
 
-Arbitraje, que el abogado no a cumplido, y solicita el pago.
+Arbitraje, 
+que el abogado no a cumplido, y solicita el pago.
 
 Pasarela de pagos paga al abogado.
 
@@ -144,13 +175,16 @@ Pasarela de pagos paga al abogado.
 Calificacion al abogado
 cuando califica un cliente,  despues de recibir un servicio,
 el cliente puede comentar acerca del abogado
-Estadisticas
 
-### gestion de documentos ()
+
+### gestion de documentos ?
 ¿ Como el cliente recibe documentos ?  en funcion a los servicios del abogado
-
-
+envio de documentos por correo al abogado mediante formulario
+envio de documentos directamente por correo
 chat interno?  firebase, websockets 
+
+
+
 
 ### que es lo que no se va a desarrollar
 sistema de monitoreo o metricas (clicks de los usuarios)
